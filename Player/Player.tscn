@@ -1,3 +1,29 @@
-[gd_scene format=2]
+[gd_scene load_steps=5 format=2]
 
-[node name="Node2D" type="RigidBody2D"]
+[ext_resource path="res://Art res/B81832F7-F2B1-4E98-93AD-60A590B10F2E.png" type="Texture" id=1]
+[ext_resource path="res://Player/Player.gd" type="Script" id=2]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "walk",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 107.0
+height = 168.0
+
+[node name="KinematicBody2D" type="KinematicBody2D"]
+position = Vector2( 296, 291 )
+moving_platform_apply_velocity_on_leave = 1
+script = ExtResource( 2 )
+speed = 200
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 2 )

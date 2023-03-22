@@ -1,3 +1,16 @@
-[gd_scene format=2]
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://tesMap.tscn" type="PackedScene" id=2]
+
+[sub_resource type="TileSet" id=1]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="tesMap" parent="." instance=ExtResource( 2 )]
+tile_set = SubResource( 1 )
+
+[node name="KinematicBody2D" parent="tesMap" instance=ExtResource( 1 )]
+__meta__ = {
+"_edit_group_": true
+}
