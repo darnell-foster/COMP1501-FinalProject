@@ -15,8 +15,8 @@ animations = [ {
 radius = 107.0
 height = 168.0
 
-[node name="KinematicBody2D" type="KinematicBody2D"]
-position = Vector2( 296, 291 )
+[node name="Player" type="KinematicBody2D"]
+position = Vector2( 300, 204 )
 moving_platform_apply_velocity_on_leave = 1
 script = ExtResource( 2 )
 speed = 200
