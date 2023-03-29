@@ -1,8 +1,8 @@
 extends KinematicBody2D
 
 #------Animation Constants---------
-var idle = true;
-var running = false;
+var idle = false;
+var running = true;
 #----------------------------------
 export var speed = 400
 var screen_size
@@ -30,6 +30,8 @@ func _process(delta):
 	# If the sprite is in the air
 	if !is_on_floor(): 
 		sprite.play("Jump")
+		idle = false
+		running = false
 
 		
 	position += velocity * delta
