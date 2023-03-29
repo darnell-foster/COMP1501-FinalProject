@@ -1,11 +1,8 @@
 extends KinematicBody2D
 
 #------Animation Constants---------
-const idle_animation = 0
-const run1_animation = 1
-const run2_animation = 2
-const jump_animation = 3
-const run3_animation = 4
+var idle = true;
+var running = false;
 #----------------------------------
 export var speed = 400
 var screen_size
@@ -26,13 +23,14 @@ func _ready():
 func _process(delta):
 	velocity.y += get_gravity() *delta
 	velocity.x = get_input_velocity() *speed
+		
 	if Input.is_action_pressed("jump") and is_on_floor():
 		jump()
 	
 	# If the sprite is in the air
 	if !is_on_floor(): 
-		sprite.frame = jump_animation
-		
+		sprite.play("Jump")
+
 		
 	position += velocity * delta
 	position.x = clamp(position.x, 0, screen_size.x)
@@ -49,18 +47,28 @@ func jump():
 	
 func get_input_velocity()->float:
 	var horizontal :=0.0
-	sprite.frame = idle_animation
+	
 	if Input.is_action_pressed("move_right"):
-		
+	
 		#if the sprite is not facing the right flip the x scale
 		if(sprite.scale.x < 0): sprite.scale.x = -1* sprite.scale.x
 		horizontal += 1.0
-		sprite.frame = run1_animation
+		if(idle == true):
+			sprite.play("Run")
+			idle = false;
 		
 	if Input.is_action_pressed("move_left"):
 		if(sprite.scale.x > 0):
 			sprite.scale.x = -1* sprite.scale.x;
 		horizontal -= 1.0
-		sprite.frame = run1_animation
-			
+		if(idle == true):
+			sprite.play("Run")
+			idle = false;
+	
+	if(idle == false and velocity.x == 0):
+		sprite.play("Idle")
+		idle = true;
+
+	
 	return horizontal
+
