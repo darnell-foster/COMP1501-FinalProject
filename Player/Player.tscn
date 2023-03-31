@@ -44,4 +44,7 @@ animation = "Run"
 position = Vector2( -86, 27 )
 shape = SubResource( 2 )
 
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+
 [connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
