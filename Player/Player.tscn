@@ -34,6 +34,7 @@ position = Vector2( 589, 267 )
 moving_platform_apply_velocity_on_leave = 1
 script = ExtResource( 2 )
 speed = 200
+jump_heght = 50.0
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( -89, 26 )

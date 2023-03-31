@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/stonegrassblock.png-7aa57911658639f87625d6fa879b8b03.stex"
+path="res://.import/stonegrassblockEdited.png-7862445fe8b0aa3e5ca22afe3ed1e68a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art res/stonegrassblock.png"
-dest_files=[ "res://.import/stonegrassblock.png-7aa57911658639f87625d6fa879b8b03.stex" ]
+source_file="res://Art res/stonegrassblockEdited.png"
+dest_files=[ "res://.import/stonegrassblockEdited.png-7862445fe8b0aa3e5ca22afe3ed1e68a.stex" ]
 
 [params]
 
