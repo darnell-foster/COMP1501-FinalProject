@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 #------Animation Constants---------
 var idle = false;
-var running = true;
+var running = false;
 #----------------------------------
 export var speed = 400
 var screen_size

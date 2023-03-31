@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/IMG_0701.PNG-25730d49eb9e58c2f1d8a8e909a3dd28.stex"
+path="res://.import/Removed_asset_1.PNG-3437fd393aa862f125baf5f0b1a0687e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art res/IMG_0701.PNG"
-dest_files=[ "res://.import/IMG_0701.PNG-25730d49eb9e58c2f1d8a8e909a3dd28.stex" ]
+source_file="res://Player/PlayAnimation/Removed_asset_1.PNG"
+dest_files=[ "res://.import/Removed_asset_1.PNG-3437fd393aa862f125baf5f0b1a0687e.stex" ]
 
 [params]
 
