@@ -45,12 +45,16 @@ func get_input_velocity()->float:
 	
 	if Input.is_action_pressed("move_right"):
 		horizontal += 1.0
-		if(sprite.scale.x < 0): sprite.scale.x = -1* sprite.scale.x #if the sprite is not facing the right flip the x scale
+		if(sprite.scale.x < 0): 
+			sprite.scale.x = -1* sprite.scale.x #if the sprite is not facing the right flip the x scale
 
 		
 	elif Input.is_action_pressed("move_left"):
 		horizontal -= 1.0
-		if(sprite.scale.x > 0): sprite.scale.x = -1* sprite.scale.x  #if the sprite is not facing the left flip the x scale
+		#if the sprite is not facing the left flip the x scale and then
+		if(sprite.scale.x > 0): 
+			sprite.scale.x = -1* sprite.scale.x
+
 
 	#if the player is on the floor based on the movment speed picks the sprite animation
 	if is_on_floor():
