@@ -15,7 +15,7 @@ onready var sprite = get_node("AnimatedSprite")
 
 func _ready():
 	screen_size = get_viewport_rect().size
-
+	
 
 func _process(delta):
 	velocity.y += get_gravity() *delta
@@ -24,9 +24,8 @@ func _process(delta):
 	if Input.is_action_pressed("jump") and is_on_floor():
 		jump()
 		sprite.play("Jump")
+		$JumpSound.play()
 
-	
-	
 	position += velocity * delta
 	position.x = clamp(position.x, 0, screen_size.x)
 	position.y = clamp(position.y, 0, screen_size.y)
@@ -58,6 +57,7 @@ func get_input_velocity()->float:
 
 	#if the player is on the floor based on the movment speed picks the sprite animation
 	if is_on_floor():
+			
 		if velocity.x != 0 and sprite.animation != "Run":
 			sprite.play("Run")
 		elif velocity.x == 0 and sprite.animation != "Idle":

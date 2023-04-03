@@ -11,6 +11,9 @@ extents = Vector2( 21.3757, 21 )
 position = Vector2( 24, 104 )
 scale = Vector2( 1.00581, 1 )
 texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Sprite"]
 
