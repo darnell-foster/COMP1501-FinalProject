@@ -43,7 +43,6 @@ shape = SubResource( 1 )
 
 [node name="Spike" parent="." instance=ExtResource( 4 )]
 position = Vector2( 322, 104 )
-mode = 3
 contacts_reported = 4
 contact_monitor = true
 

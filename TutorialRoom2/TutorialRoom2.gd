@@ -1,9 +1,9 @@
-extends Area2D
+extends Node2D
 
 
-# Declare a signal with the name "my_signal"
-signal hit_spike
-
+# Declare member variables here. Examples:
+# var a = 2
+# var b = "text"
 
 
 # Called when the node enters the scene tree for the first time.
@@ -13,8 +13,10 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
-#	pass
+	
 
 
-func _on_Area2D_body_entered(body):
-	pass
+
+func _on_Door_body_entered(body):
+	if body is KinematicBody2D:
+		get_tree().change_scene("res://TutorialRoom3/TutorialRoom3.tscn")

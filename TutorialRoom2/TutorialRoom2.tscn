@@ -1,12 +1,14 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://TileMaps/GrassBlock.tres" type="TileSet" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://TileMaps/DirtBlock.tres" type="TileSet" id=3]
 [ext_resource path="res://TileMaps/Spike.tres" type="TileSet" id=4]
-[ext_resource path="res://TileMaps/Goal.tres" type="TileSet" id=5]
+[ext_resource path="res://Objects/Door.tscn" type="PackedScene" id=6]
+[ext_resource path="res://TutorialRoom2/TutorialRoom2.gd" type="Script" id=7]
 
 [node name="TutorialRoom2" type="Node2D"]
+script = ExtResource( 7 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 79, 31 )
@@ -33,9 +35,7 @@ collision_layer = 2
 format = 1
 tile_data = PoolIntArray( 327688, 0, 0, 327689, 0, 0, 327694, 0, 0, 786459, 0, 0, 851986, 0, 0, 851987, 0, 0, 851988, 0, 0, 851992, 0, 0 )
 
-[node name="Goal" type="TileMap" parent="."]
-tile_set = ExtResource( 5 )
-cell_size = Vector2( 32, 32 )
-collision_layer = 2
-format = 1
-tile_data = PoolIntArray( 655390, 0, 0 )
+[node name="Door" parent="." instance=ExtResource( 6 )]
+position = Vector2( 992, 338 )
+
+[connection signal="body_entered" from="Door" to="." method="_on_Door_body_entered"]
