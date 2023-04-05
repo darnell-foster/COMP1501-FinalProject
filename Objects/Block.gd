@@ -12,5 +12,16 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
+func _process(delta):
+	pass
 
+
+
+#check for collision, if object is above make solid
+func onFloor():
+	var bodiesColliding = get_colliding_bodies()
+	
+	if (bodiesColliding.has("TileMap")):
+		#Mode = "move and slide"
+		pass
+	pass
