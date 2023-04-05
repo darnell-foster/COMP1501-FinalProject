@@ -11,7 +11,6 @@ export var jump_time_to_decent : float =0.4
 onready var jump_velocity : float =((2.0 * jump_heght)/jump_time_to_peak)* -1.0
 onready var jump_gravity : float =((-2.0 * jump_heght)/(jump_time_to_peak*jump_time_to_peak))*-1.0
 onready var fall_gravity : float =((-2.0 * jump_heght)/(jump_time_to_decent*jump_time_to_decent))*-1.0
-onready var sprite = get_node("AnimatedSprite")
 
 func _ready():
 	screen_size = get_viewport_rect().size
@@ -21,9 +20,9 @@ func _process(delta):
 	velocity.y += get_gravity() *delta
 	velocity.x = get_input_velocity() *speed
 		
-	if Input.is_action_pressed("jump") and is_on_floor():
+	if Input.is_action_just_pressed("jump") and is_on_floor():
 		jump()
-		sprite.play("Jump")
+		$Sprite.play("Jump")
 		$JumpSound.play()
 
 	position += velocity * delta
@@ -44,24 +43,17 @@ func get_input_velocity()->float:
 	
 	if Input.is_action_pressed("move_right"):
 		horizontal += 1.0
-		if(sprite.scale.x < 0): 
-			sprite.scale.x = -1* sprite.scale.x #if the sprite is not facing the right flip the x scale
+		$Sprite.flip_h = false #if the sprite is not facing the right flip the image
+		if is_on_floor(): $Sprite.play("Run")
 
 		
 	elif Input.is_action_pressed("move_left"):
 		horizontal -= 1.0
-		#if the sprite is not facing the left flip the x scale and then
-		if(sprite.scale.x > 0): 
-			sprite.scale.x = -1* sprite.scale.x
+		$Sprite.flip_h = true #if the sprite is not facing the left flip the image
+		if is_on_floor(): $Sprite.play("Run")
 
-
-	#if the player is on the floor based on the movment speed picks the sprite animation
-	if is_on_floor():
-			
-		if velocity.x != 0 and sprite.animation != "Run":
-			sprite.play("Run")
-		elif velocity.x == 0 and sprite.animation != "Idle":
-			sprite.play("Idle")
+	elif horizontal == 0:
+		$Sprite.play("Idle")
 
 
 		
@@ -70,7 +62,8 @@ func get_input_velocity()->float:
 
 
 func _on_Area2D_body_entered(body):
-	get_tree().reload_current_scene()
+	if body is KinematicBody2D:
+		get_tree().reload_current_scene()
 
 
 func _on_Spike_body_entered(body):
