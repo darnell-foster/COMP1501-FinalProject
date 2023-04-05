@@ -26,8 +26,8 @@ func _process(delta):
 		$JumpSound.play()
 
 	position += velocity * delta
-	position.x = clamp(position.x, 0, screen_size.x)
-	position.y = clamp(position.y, 0, screen_size.y)
+	#position.x = clamp(position.x, 0, screen_size.x)
+	#position.y = clamp(position.y, 0, screen_size.y)
 	
 	velocity=move_and_slide(velocity, Vector2.UP)
 	

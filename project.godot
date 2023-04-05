@@ -16,7 +16,6 @@ config/icon="res://icon.png"
 
 [display]
 
-window/size/width=2048
 window/size/fullscreen=true
 
 [gui]
