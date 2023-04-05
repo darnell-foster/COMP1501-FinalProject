@@ -52,11 +52,10 @@ func get_input_velocity()->float:
 		$Sprite.flip_h = true #if the sprite is not facing the left flip the image
 		if is_on_floor(): $Sprite.play("Run")
 
-	elif horizontal == 0:
+	elif horizontal == 0 and is_on_floor():
 		$Sprite.play("Idle")
 
 
-		
 	return horizontal
 
 

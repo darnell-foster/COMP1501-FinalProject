@@ -12,8 +12,6 @@ script = ExtResource( 7 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 79, 31 )
-jump_time_to_peak = 0.25
-jump_time_to_decent = 0.2
 
 [node name="Grass" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )

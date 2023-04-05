@@ -11,9 +11,7 @@ extents = Vector2( 1096.5, 105.5 )
 [node name="World" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 84, 88 )
-jump_time_to_peak = 0.25
-jump_time_to_decent = 0.2
+position = Vector2( 83, 96 )
 
 [node name="Block" parent="." instance=ExtResource( 5 )]
 position = Vector2( 216, 73 )

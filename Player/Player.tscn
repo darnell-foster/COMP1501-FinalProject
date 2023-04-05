@@ -36,8 +36,10 @@ script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
 }
-speed = 150
+speed = 125
 jump_heght = 50.0
+jump_time_to_peak = 0.3
+jump_time_to_decent = 0.35
 
 [node name="Sprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.15, 0.15 )
@@ -55,6 +57,7 @@ volume_db = -7.888
 
 [node name="Camera2D2" type="Camera2D" parent="."]
 current = true
+zoom = Vector2( 0.5, 0.5 )
 drag_margin_h_enabled = true
 drag_margin_v_enabled = true
 drag_margin_left = 0.1
