@@ -17,7 +17,7 @@ func _process(delta):
 	
 	
 	position += velocity * delta
-	velocity=move_and_slide(velocity, Vector2.UP)
+	velocity = move_and_slide(velocity, Vector2.UP)
 	
 
 
