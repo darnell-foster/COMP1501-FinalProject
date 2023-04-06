@@ -14,7 +14,7 @@ font_data = ExtResource( 7 )
 script = ExtResource( 6 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 48, 164 )
+position = Vector2( 47, 117 )
 collision_mask = 0
 jump_time_to_peak = 0.25
 jump_time_to_decent = 0.2
@@ -41,15 +41,15 @@ margin_top = 112.0
 margin_right = 347.0
 margin_bottom = 126.0
 custom_fonts/font = SubResource( 1 )
-text = "Use the space bar to Jump"
+text = "Use W or Space Bar to Jump"
 
 [node name="Label3" type="Label" parent="."]
-margin_left = 378.0
-margin_top = 5.0
-margin_right = 569.0
-margin_bottom = 19.0
+margin_left = 412.0
+margin_top = 3.0
+margin_right = 603.0
+margin_bottom = 17.0
 custom_fonts/font = SubResource( 1 )
-text = "Enter Doors to move the next Level"
+text = "Enter Doors to the next Level"
 
 [node name="Label" type="Label" parent="."]
 margin_left = -35.0
@@ -57,7 +57,7 @@ margin_top = 140.0
 margin_right = 101.0
 margin_bottom = 154.0
 custom_fonts/font = SubResource( 1 )
-text = "Use W A S D to Move"
+text = "Use A and D to Move"
 align = 1
 valign = 1
 
