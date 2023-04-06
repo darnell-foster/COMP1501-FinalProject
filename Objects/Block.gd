@@ -4,8 +4,7 @@ extends KinematicBody2D
 # Declare member variables here. Examples:
 export var pushForce : float = 100
 var velocity := Vector2.ZERO
-export var fall_gravity : float = 100
-signal push
+export var fall_gravity : float = 1000
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -25,7 +24,6 @@ func _process(delta):
 func _on_PushBoundLeft_body_entered(body):
 	if body is KinematicBody2D:
 		velocity.x += pushForce
-		emit_signal("push")
 
 func _on_PushBoundLeft_body_exited(body):
 	if body is KinematicBody2D:
@@ -34,7 +32,6 @@ func _on_PushBoundLeft_body_exited(body):
 func _on_PushBoundsRight_body_entered(body):
 	if body is KinematicBody2D:
 		velocity.x += -1*pushForce
-		emit_signal("push")
 
 func _on_PushBoundsRight_body_exited(body):
 	if body is KinematicBody2D:

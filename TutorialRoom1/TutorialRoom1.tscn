@@ -1,14 +1,18 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://TileMaps/GrassBlock.tres" type="TileSet" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://TileMaps/DirtBlock.tres" type="TileSet" id=3]
+[ext_resource path="res://Objects/OutOfWorld.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Objects/Door.tscn" type="PackedScene" id=5]
 [ext_resource path="res://TutorialRoom1/TutorialRoom1.gd" type="Script" id=6]
 [ext_resource path="res://Art res/Fonts_and_Text/m5x7.ttf" type="DynamicFontData" id=7]
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 7 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 492.5, 85 )
 
 [node name="TutorialRoom1" type="Node2D"]
 script = ExtResource( 6 )
@@ -60,5 +64,11 @@ custom_fonts/font = SubResource( 1 )
 text = "Use A and D to Move"
 align = 1
 valign = 1
+
+[node name="OutOfWorld" parent="." instance=ExtResource( 4 )]
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="OutOfWorld"]
+position = Vector2( 256.5, 387 )
+shape = SubResource( 2 )
 
 [connection signal="body_entered" from="Door" to="." method="_on_Door_body_entered"]

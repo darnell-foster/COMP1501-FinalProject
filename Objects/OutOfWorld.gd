@@ -1,4 +1,4 @@
-extends StaticBody2D
+extends Area2D
 
 
 # Declare member variables here. Examples:
@@ -15,8 +15,6 @@ func _ready():
 #func _process(delta):
 #	pass
 
-
-func _on_Spike_HitBox_body_entered(body):
+func _on_Node2D_body_entered(body):
 	if body is KinematicBody2D and body.name == "Player":
-		get_tree().reload_current_scene()
-
+			get_tree().reload_current_scene()

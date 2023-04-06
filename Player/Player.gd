@@ -58,11 +58,3 @@ func get_input_velocity()->float:
 
 	return horizontal
 
-
-func _on_OutOfWorld_body_entered(body):
-		if body is KinematicBody2D and body.name == "Player":
-			get_tree().reload_current_scene()
-
-
-func _on_Spike_hit():
-	get_tree().reload_current_scene()

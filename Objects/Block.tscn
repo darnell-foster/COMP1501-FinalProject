@@ -12,6 +12,8 @@ extents = Vector2( 9.5, 10 )
 [node name="Block" type="KinematicBody2D"]
 position = Vector2( 153, 97 )
 script = ExtResource( 2 )
+pushForce = 20.0
+fall_gravity = 500.0
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 5.96046e-08, -2.98023e-08 )
