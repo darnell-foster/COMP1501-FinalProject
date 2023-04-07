@@ -4,6 +4,7 @@ export var speed = 400
 var screen_size
 var velocity := Vector2.ZERO
 
+
 export var jump_heght : float =100.0
 export var jump_time_to_peak : float =0.5
 export var jump_time_to_decent : float =0.4
@@ -57,4 +58,3 @@ func get_input_velocity()->float:
 
 
 	return horizontal
-
