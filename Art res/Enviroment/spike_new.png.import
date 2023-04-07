@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/IMG_0726.PNG-16087998c07c060cd4084c180c21bbbe.stex"
+path="res://.import/spike_new.png-58c3d2f9250d16ca22e9bb472109b983.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art res/water/IMG_0726.PNG"
-dest_files=[ "res://.import/IMG_0726.PNG-16087998c07c060cd4084c180c21bbbe.stex" ]
+source_file="res://Art res/Enviroment/spike_new.png"
+dest_files=[ "res://.import/spike_new.png-58c3d2f9250d16ca22e9bb472109b983.stex" ]
 
 [params]
 
