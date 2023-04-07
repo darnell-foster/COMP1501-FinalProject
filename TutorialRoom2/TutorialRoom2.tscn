@@ -13,7 +13,7 @@
 extents = Vector2( 779.5, 118.25 )
 
 [node name="TutorialRoom2" type="Node2D"]
-position = Vector2( 3, -511 )
+position = Vector2( 0, -512 )
 script = ExtResource( 7 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
