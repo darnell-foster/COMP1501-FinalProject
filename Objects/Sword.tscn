@@ -8,7 +8,11 @@ radius = 114.145
 height = 299.074
 
 [node name="Sword" type="Area2D"]
+scale = Vector2( 0.1, 0.1 )
 script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )

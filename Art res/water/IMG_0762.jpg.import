@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/IMG_0725.PNG-ac6b737d93344d4fce8da73c17cb03fe.stex"
+path="res://.import/IMG_0762.jpg-fa4c8a587c65ecd9729db54d4058b6b6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art res/water/IMG_0725.PNG"
-dest_files=[ "res://.import/IMG_0725.PNG-ac6b737d93344d4fce8da73c17cb03fe.stex" ]
+source_file="res://Art res/water/IMG_0762.jpg"
+dest_files=[ "res://.import/IMG_0762.jpg-fa4c8a587c65ecd9729db54d4058b6b6.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

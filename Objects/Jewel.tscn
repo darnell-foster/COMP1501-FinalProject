@@ -4,17 +4,21 @@
 [ext_resource path="res://Objects/Jewel.gd" type="Script" id=2]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 85.3754
-height = 65.8671
+radius = 99.4296
+height = 44.3971
 
 [node name="Jewel" type="Area2D"]
+scale = Vector2( 0.1, 0.1 )
 script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 24, -43 )
+position = Vector2( 22, -36 )
 rotation = 1.1981
 shape = SubResource( 1 )
 
