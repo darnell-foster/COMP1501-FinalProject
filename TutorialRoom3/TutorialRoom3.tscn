@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://TileMaps/GrassBlock.tres" type="TileSet" id=1]
 [ext_resource path="res://Objects/Block.tscn" type="PackedScene" id=2]
@@ -6,11 +6,13 @@
 [ext_resource path="res://TileMaps/DirtBlock.tres" type="TileSet" id=4]
 [ext_resource path="res://Objects/Door.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Objects/OutOfWorld.tscn" type="PackedScene" id=6]
+[ext_resource path="res://BackGround/BackGround_Forest.tscn" type="PackedScene" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 570.5, 64 )
 
 [node name="TutorialRoom3" type="Node2D"]
+position = Vector2( 0, -322 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 79, 31 )
@@ -42,3 +44,5 @@ shape = SubResource( 1 )
 [node name="Door" parent="." instance=ExtResource( 5 )]
 position = Vector2( 560, 200 )
 scale = Vector2( 0.7, 0.7 )
+
+[node name="ParallaxBackground" parent="." instance=ExtResource( 7 )]

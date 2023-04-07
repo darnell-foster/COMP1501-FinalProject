@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://TileMaps/Dirt_and_Grass.tres" type="TileSet" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -9,14 +9,16 @@
 [ext_resource path="res://Objects/Sword.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Objects/Jewel.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Objects/Pendant.tscn" type="PackedScene" id=9]
+[ext_resource path="res://BackGround/BackGround_Forest.tscn" type="PackedScene" id=10]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 872.5, 211 )
 
 [node name="World" type="Node2D"]
+position = Vector2( 318, -139 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 83, 106 )
+position = Vector2( -208, 85 )
 
 [node name="Block" parent="." instance=ExtResource( 5 )]
 position = Vector2( 214, -27 )
@@ -58,6 +60,8 @@ scale = Vector2( 0.1, 0.1 )
 [node name="Pendant" parent="." instance=ExtResource( 9 )]
 position = Vector2( 706, 70 )
 scale = Vector2( 0.1, 0.1 )
+
+[node name="ParallaxBackground" parent="." instance=ExtResource( 10 )]
 
 [connection signal="collect_sword" from="Sword" to="HUD" method="_on_Sword_collect_sword"]
 [connection signal="collect_jewel" from="Jewel" to="HUD" method="_on_Jewel_collect_jewel"]
