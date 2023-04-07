@@ -27,32 +27,45 @@ animations = [ {
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
-radius = 86.0
-height = 106.0
+radius = 11.0
+height = 22.0
 
 [node name="Player" type="KinematicBody2D"]
-position = Vector2( 589, 267 )
 moving_platform_apply_velocity_on_leave = 1
 script = ExtResource( 2 )
-speed = 200
+__meta__ = {
+"_edit_group_": true
+}
+speed = 125
 jump_heght = 50.0
+jump_time_to_peak = 0.3
+jump_time_to_decent = 0.35
 
-[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( -89, 26 )
-scale = Vector2( 0.955, 1 )
+[node name="Sprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.15, 0.15 )
 frames = SubResource( 3 )
 animation = "Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -85, 27 )
 shape = SubResource( 2 )
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( -84, 32 )
-current = true
 
 [node name="JumpSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 8 )
 volume_db = -7.888
 
-[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
+[node name="Position2D" type="Position2D" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+zoom = Vector2( 0.5, 0.5 )
+limit_left = -10000
+limit_bottom = 500
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+drag_margin_left = 0.1
+drag_margin_top = 0.1
+drag_margin_right = 0.1
+drag_margin_bottom = 0.1
+editor_draw_drag_margin = true
+
+[connection signal="animation_finished" from="Sprite" to="." method="_on_AnimatedSprite_animation_finished"]

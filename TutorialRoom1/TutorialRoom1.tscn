@@ -1,0 +1,78 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://TileMaps/GrassBlock.tres" type="TileSet" id=1]
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://TileMaps/DirtBlock.tres" type="TileSet" id=3]
+[ext_resource path="res://Objects/OutOfWorld.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Objects/Door.tscn" type="PackedScene" id=5]
+[ext_resource path="res://TutorialRoom1/TutorialRoom1.gd" type="Script" id=6]
+[ext_resource path="res://Art res/Fonts_and_Text/m5x7.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://BackGround/BackGround_Forest.tscn" type="PackedScene" id=8]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 7 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 492.5, 85 )
+
+[node name="TutorialRoom1" type="Node2D"]
+position = Vector2( 0, -231 )
+script = ExtResource( 6 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 47, 117 )
+collision_mask = 0
+jump_time_to_peak = 0.25
+jump_time_to_decent = 0.2
+
+[node name="Grass" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+show_collision = true
+format = 1
+tile_data = PoolIntArray( 196621, 0, 0, 196622, 0, 0, 196623, 0, 0, 196624, 0, 0, 196625, 0, 0, 327688, 0, 0, 327689, 0, 0, 327690, 0, 0, 327691, 0, 0, 327692, 0, 0, 458752, 0, 0, 458753, 0, 0, 458754, 0, 0, 458755, 0, 0, 458756, 0, 0, 458757, 0, 0, 458758, 0, 0, 458759, 0, 0 )
+
+[node name="Dirt" type="TileMap" parent="."]
+tile_set = ExtResource( 3 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( -65518, 0, 0, 18, 0, 0, 65554, 0, 0, 131090, 0, 0, 196626, 0, 0, 262157, 0, 0, 262158, 0, 0, 262159, 0, 0, 262160, 0, 0, 262161, 0, 0, 262162, 0, 0, 327693, 0, 0, 327694, 0, 0, 327695, 0, 0, 327696, 0, 0, 327697, 0, 0, 327698, 0, 0, 393224, 0, 0, 393225, 0, 0, 393226, 0, 0, 393227, 0, 0, 393228, 0, 0, 393229, 0, 0, 393230, 0, 0, 393231, 0, 0, 393232, 0, 0, 393233, 0, 0, 393234, 0, 0, 458760, 0, 0, 458761, 0, 0, 458762, 0, 0, 458763, 0, 0, 458764, 0, 0, 458765, 0, 0, 458766, 0, 0, 458767, 0, 0, 458768, 0, 0, 458769, 0, 0, 458770, 0, 0, 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 0, 0, 524296, 0, 0, 524297, 0, 0, 524298, 0, 0, 524299, 0, 0, 524300, 0, 0, 524301, 0, 0, 524302, 0, 0, 524303, 0, 0, 524304, 0, 0, 524305, 0, 0, 524306, 0, 0 )
+
+[node name="Door" parent="." instance=ExtResource( 5 )]
+position = Vector2( 534, 55 )
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 204.0
+margin_top = 112.0
+margin_right = 347.0
+margin_bottom = 126.0
+custom_fonts/font = SubResource( 1 )
+text = "Use W or Space Bar to Jump"
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 412.0
+margin_top = 3.0
+margin_right = 603.0
+margin_bottom = 17.0
+custom_fonts/font = SubResource( 1 )
+text = "Enter Doors to the next Level"
+
+[node name="Label" type="Label" parent="."]
+margin_left = -35.0
+margin_top = 140.0
+margin_right = 101.0
+margin_bottom = 154.0
+custom_fonts/font = SubResource( 1 )
+text = "Use A and D to Move"
+align = 1
+valign = 1
+
+[node name="OutOfWorld" parent="." instance=ExtResource( 4 )]
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="OutOfWorld"]
+position = Vector2( 256.5, 387 )
+shape = SubResource( 2 )
+
+[node name="ParallaxBackground" parent="." instance=ExtResource( 8 )]
+
+[connection signal="body_entered" from="Door" to="." method="_on_Door_body_entered"]

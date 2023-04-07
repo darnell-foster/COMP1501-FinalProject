@@ -2,4 +2,4 @@ extends Control
 
 func _on_Start_pressed():
 	# Load the new scene
-	get_tree().change_scene("res://TestMap/tesMap.tscn")
+	get_tree().change_scene("res://TutorialRoom1/TutorialRoom1.tscn")
