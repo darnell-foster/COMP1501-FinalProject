@@ -20,7 +20,7 @@ position = Vector2( 0, -231 )
 script = ExtResource( 6 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 49, 166 )
+position = Vector2( 48, 100 )
 collision_mask = 0
 jump_time_to_peak = 0.25
 jump_time_to_decent = 0.2
