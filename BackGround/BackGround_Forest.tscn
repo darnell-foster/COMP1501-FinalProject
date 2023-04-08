@@ -7,15 +7,10 @@
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 scroll_limit_end = Vector2( 0, 1000 )
 
-<<<<<<< Updated upstream
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
 motion_mirroring = Vector2( 2500, 0 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
-=======
-[node name="Sprite" type="Sprite" parent="ParallaxLayer"]
-position = Vector2( 1255, 553 )
->>>>>>> Stashed changes
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 1 )
 centered = false
