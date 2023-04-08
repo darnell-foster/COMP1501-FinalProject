@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://TileMaps/GrassBlock.tres" type="TileSet" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -8,16 +8,20 @@
 [ext_resource path="res://Objects/Door.tscn" type="PackedScene" id=6]
 [ext_resource path="res://TutorialRoom2/TutorialRoom2.gd" type="Script" id=7]
 [ext_resource path="res://BackGround/BackGround_Forest.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Art res/Fonts_and_Text/m5x7.ttf" type="DynamicFontData" id=9]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 779.5, 118.25 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 9 )
 
 [node name="TutorialRoom2" type="Node2D"]
 position = Vector2( 0, -512 )
 script = ExtResource( 7 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 79, 31 )
+position = Vector2( 62, 18 )
 
 [node name="Grass" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
@@ -54,5 +58,15 @@ position = Vector2( 479.5, 693.75 )
 shape = SubResource( 1 )
 
 [node name="ParallaxBackground" parent="." instance=ExtResource( 8 )]
+
+[node name="Label" type="Label" parent="."]
+margin_left = 220.0
+margin_top = 91.0
+margin_right = 356.0
+margin_bottom = 105.0
+custom_fonts/font = SubResource( 2 )
+text = "AVOID THE SPIKES!"
+align = 1
+valign = 1
 
 [connection signal="body_entered" from="Door" to="." method="_on_Door_body_entered"]
