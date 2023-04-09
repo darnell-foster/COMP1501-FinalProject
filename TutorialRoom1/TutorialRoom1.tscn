@@ -18,7 +18,7 @@ font_data = ExtResource( 7 )
 extents = Vector2( 789, 159.5 )
 
 [node name="TutorialRoom1" type="Node2D"]
-position = Vector2( 0, -231 )
+position = Vector2( 2, 32 )
 script = ExtResource( 6 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
