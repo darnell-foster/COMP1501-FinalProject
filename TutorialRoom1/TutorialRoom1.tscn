@@ -20,7 +20,7 @@ position = Vector2( 0, -231 )
 script = ExtResource( 6 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 49, 166 )
+position = Vector2( 46, 48 )
 collision_mask = 0
 
 [node name="Grass" type="TileMap" parent="."]
@@ -37,31 +37,40 @@ format = 1
 tile_data = PoolIntArray( -65518, 0, 0, 18, 0, 0, 65554, 0, 0, 131090, 0, 0, 196626, 0, 0, 262157, 0, 0, 262158, 0, 0, 262159, 0, 0, 262160, 0, 0, 262161, 0, 0, 262162, 0, 0, 327693, 0, 0, 327694, 0, 0, 327695, 0, 0, 327696, 0, 0, 327697, 0, 0, 327698, 0, 0, 393224, 0, 0, 393225, 0, 0, 393226, 0, 0, 393227, 0, 0, 393228, 0, 0, 393229, 0, 0, 393230, 0, 0, 393231, 0, 0, 393232, 0, 0, 393233, 0, 0, 393234, 0, 0, 458760, 0, 0, 458761, 0, 0, 458762, 0, 0, 458763, 0, 0, 458764, 0, 0, 458765, 0, 0, 458766, 0, 0, 458767, 0, 0, 458768, 0, 0, 458769, 0, 0, 458770, 0, 0, 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 0, 0, 524296, 0, 0, 524297, 0, 0, 524298, 0, 0, 524299, 0, 0, 524300, 0, 0, 524301, 0, 0, 524302, 0, 0, 524303, 0, 0, 524304, 0, 0, 524305, 0, 0, 524306, 0, 0 )
 
 [node name="Door" parent="." instance=ExtResource( 5 )]
-position = Vector2( 534, 55 )
+position = Vector2( 552, 52 )
 
 [node name="Label2" type="Label" parent="."]
-margin_left = 204.0
-margin_top = 112.0
-margin_right = 347.0
-margin_bottom = 126.0
+margin_left = 182.0
+margin_top = 98.0
+margin_right = 325.0
+margin_bottom = 112.0
 custom_fonts/font = SubResource( 1 )
-text = "Use W or Space Bar to Jump"
+text = "W OR SPACE BAR TO JUMP"
 
 [node name="Label3" type="Label" parent="."]
+<<<<<<< HEAD
 margin_left = 364.0
 margin_top = -1.0
 margin_right = 571.0
 margin_bottom = 13.0
 custom_fonts/font = SubResource( 1 )
 text = "Enter Doors to Move to the Next Level"
+=======
+margin_left = 404.0
+margin_top = -6.0
+margin_right = 595.0
+margin_bottom = 8.0
+custom_fonts/font = SubResource( 1 )
+text = "ENTER DOORS TO THE NEXT LEVEL"
+>>>>>>> 6ce8f32144d3f89895308c403bb2a32eb36c0265
 
 [node name="Label" type="Label" parent="."]
-margin_left = -35.0
-margin_top = 140.0
-margin_right = 101.0
-margin_bottom = 154.0
+margin_left = -22.0
+margin_top = 135.0
+margin_right = 114.0
+margin_bottom = 149.0
 custom_fonts/font = SubResource( 1 )
-text = "Use A and D to Move"
+text = "USE A AND D TO MOVE"
 align = 1
 valign = 1
 

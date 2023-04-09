@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://TileMaps/GrassBlock.tres" type="TileSet" id=1]
+[ext_resource path="res://TileMaps/DirtBlock.tres" type="TileSet" id=2]
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Objects/Door.tscn" type="PackedScene" id=4]
+[ext_resource path="res://BackGround/BackGround_Forest.tscn" type="PackedScene" id=5]
+
+[node name="forVideo" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+position = Vector2( 46, 48 )
+collision_mask = 0
+
+[node name="Grass" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+show_collision = true
+format = 1
+tile_data = PoolIntArray( 327700, 0, 0, 393223, 0, 0, 393230, 0, 0, 393231, 0, 0, 393235, 0, 0, 458752, 0, 0, 458753, 0, 0, 458754, 0, 0, 458755, 0, 0, 458756, 0, 0, 458757, 0, 0, 458758, 0, 0, 458760, 0, 0, 458761, 0, 0, 458762, 0, 0, 458763, 0, 0, 458764, 0, 0, 458765, 0, 0, 458768, 0, 0, 458769, 0, 0, 458770, 0, 0 )
+
+[node name="Dirt" type="TileMap" parent="."]
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 393236, 0, 0, 458759, 0, 0, 458766, 0, 0, 458767, 0, 0, 458771, 0, 0, 458772, 0, 0, 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 0, 0, 524296, 0, 0, 524297, 0, 0, 524298, 0, 0, 524299, 0, 0, 524300, 0, 0, 524301, 0, 0, 524302, 0, 0, 524303, 0, 0, 524304, 0, 0, 524305, 0, 0, 524306, 0, 0, 524307, 0, 0, 524308, 0, 0 )
+
+[node name="Door" parent="." instance=ExtResource( 4 )]
+position = Vector2( 552, 52 )
+
+[node name="ParallaxBackground" parent="." instance=ExtResource( 5 )]
