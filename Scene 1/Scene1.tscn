@@ -39,7 +39,7 @@ texture = ExtResource( 4 )
 offset = Vector2( -2112, 644 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 2304, 920 )
+position = Vector2( 2672, 40 )
 
 [node name="Background Music" parent="Player" instance=ExtResource( 5 )]
 
@@ -67,305 +67,313 @@ position = Vector2( 4969, 920 )
 
 [node name="HUD" parent="." instance=ExtResource( 8 )]
 
-[node name="Jewel" parent="." instance=ExtResource( 9 )]
-position = Vector2( 112, 120 )
-
-[node name="Sword" parent="." instance=ExtResource( 10 )]
-position = Vector2( 2728, 48 )
-
-[node name="Pendant" parent="." instance=ExtResource( 11 )]
-position = Vector2( 3504, 936 )
-
 [node name="Menu" parent="." instance=ExtResource( 6 )]
 
-[node name="Posioned_Water_1" parent="." instance=ExtResource( 13 )]
-position = Vector2( 1136, 984 )
+[node name="ALL_water" type="Node2D" parent="."]
 
-[node name="Posioned_Water_10" parent="." instance=ExtResource( 13 )]
-position = Vector2( 304, 960 )
-
-[node name="Posioned_Water_11" parent="." instance=ExtResource( 13 )]
-position = Vector2( 336, 960 )
-
-[node name="Posioned_Water_2" parent="." instance=ExtResource( 13 )]
-position = Vector2( 1168, 984 )
-
-[node name="Posioned_Water_20" parent="." instance=ExtResource( 13 )]
-position = Vector2( 1488, 544 )
-
-[node name="Posioned_Water_21" parent="." instance=ExtResource( 13 )]
-position = Vector2( 1488, 544 )
-
-[node name="Posioned_Water_22" parent="." instance=ExtResource( 13 )]
+[node name="Posioned_Water_22" parent="ALL_water" instance=ExtResource( 13 )]
 position = Vector2( 1520, 544 )
 
-[node name="Posioned_Water_23" parent="." instance=ExtResource( 13 )]
+[node name="Posioned_Water_1" parent="ALL_water" instance=ExtResource( 13 )]
+position = Vector2( 1136, 984 )
+
+[node name="Posioned_Water_10" parent="ALL_water" instance=ExtResource( 13 )]
+position = Vector2( 304, 960 )
+
+[node name="Posioned_Water_11" parent="ALL_water" instance=ExtResource( 13 )]
+position = Vector2( 336, 960 )
+
+[node name="Posioned_Water_2" parent="ALL_water" instance=ExtResource( 13 )]
+position = Vector2( 1168, 984 )
+
+[node name="Posioned_Water_20" parent="ALL_water" instance=ExtResource( 13 )]
+position = Vector2( 1488, 544 )
+
+[node name="Posioned_Water_21" parent="ALL_water" instance=ExtResource( 13 )]
+position = Vector2( 1488, 544 )
+
+[node name="Posioned_Water_23" parent="ALL_water" instance=ExtResource( 13 )]
 position = Vector2( 1552, 544 )
 
-[node name="Posioned_Water_24" parent="." instance=ExtResource( 13 )]
+[node name="Posioned_Water_24" parent="ALL_water" instance=ExtResource( 13 )]
 position = Vector2( 1584, 544 )
 
-[node name="Posioned_Water_25" parent="." instance=ExtResource( 13 )]
+[node name="Posioned_Water_25" parent="ALL_water" instance=ExtResource( 13 )]
 position = Vector2( 1616, 544 )
 
-[node name="Posioned_Water_3" parent="." instance=ExtResource( 13 )]
+[node name="Posioned_Water_3" parent="ALL_water" instance=ExtResource( 13 )]
 position = Vector2( 1200, 984 )
 
-[node name="Posioned_Water_4" parent="." instance=ExtResource( 13 )]
+[node name="Posioned_Water_4" parent="ALL_water" instance=ExtResource( 13 )]
 position = Vector2( 1200, 984 )
 
-[node name="Posioned_Water_12" parent="." instance=ExtResource( 13 )]
+[node name="Posioned_Water_12" parent="ALL_water" instance=ExtResource( 13 )]
 position = Vector2( 1840, 992 )
 
-[node name="Posioned_Water_13" parent="." instance=ExtResource( 13 )]
+[node name="Posioned_Water_13" parent="ALL_water" instance=ExtResource( 13 )]
 position = Vector2( 1872, 992 )
 
-[node name="Posioned_Water_14" parent="." instance=ExtResource( 13 )]
+[node name="Posioned_Water_14" parent="ALL_water" instance=ExtResource( 13 )]
 position = Vector2( 1904, 992 )
 
-[node name="Posioned_Water_15" parent="." instance=ExtResource( 13 )]
+[node name="Posioned_Water_15" parent="ALL_water" instance=ExtResource( 13 )]
 position = Vector2( 1936, 992 )
 
-[node name="Posioned_Water_5" parent="." instance=ExtResource( 13 )]
+[node name="Posioned_Water_5" parent="ALL_water" instance=ExtResource( 13 )]
 position = Vector2( 2992, 968 )
 scale = Vector2( 0.5, 1.5 )
 
-[node name="Posioned_Water_7" parent="." instance=ExtResource( 13 )]
+[node name="Posioned_Water_7" parent="ALL_water" instance=ExtResource( 13 )]
 position = Vector2( 3408, 976 )
 scale = Vector2( 0.5, 1 )
 
-[node name="Posioned_Water_26" parent="." instance=ExtResource( 13 )]
-position = Vector2( 4144, 984 )
-scale = Vector2( 0.5, 1 )
-
-[node name="Posioned_Water_27" parent="." instance=ExtResource( 13 )]
+[node name="Posioned_Water_27" parent="ALL_water" instance=ExtResource( 13 )]
 position = Vector2( 4176, 984 )
 scale = Vector2( 0.5, 1 )
 
-[node name="Posioned_Water_30" parent="." instance=ExtResource( 13 )]
+[node name="Posioned_Water_30" parent="ALL_water" instance=ExtResource( 13 )]
 position = Vector2( 4176, 984 )
 scale = Vector2( 0.5, 1 )
 
-[node name="Posioned_Water_28" parent="." instance=ExtResource( 13 )]
+[node name="Posioned_Water_28" parent="ALL_water" instance=ExtResource( 13 )]
 position = Vector2( 4208, 984 )
 scale = Vector2( 0.5, 1 )
 
-[node name="Posioned_Water_32" parent="." instance=ExtResource( 13 )]
+[node name="Posioned_Water_32" parent="ALL_water" instance=ExtResource( 13 )]
 position = Vector2( 4240, 984 )
 scale = Vector2( 0.5, 1 )
 
-[node name="Posioned_Water_29" parent="." instance=ExtResource( 13 )]
+[node name="Posioned_Water_29" parent="ALL_water" instance=ExtResource( 13 )]
 position = Vector2( 4560, 992 )
 scale = Vector2( 0.5, 1 )
 
-[node name="Posioned_Water_31" parent="." instance=ExtResource( 13 )]
+[node name="Posioned_Water_31" parent="ALL_water" instance=ExtResource( 13 )]
 position = Vector2( 4592, 992 )
 scale = Vector2( 0.5, 1 )
 
-[node name="Posioned_Water_8" parent="." instance=ExtResource( 13 )]
+[node name="Posioned_Water_8" parent="ALL_water" instance=ExtResource( 13 )]
 position = Vector2( 3440, 976 )
 scale = Vector2( 0.5, 1 )
 
-[node name="Posioned_Water_9" parent="." instance=ExtResource( 13 )]
+[node name="Posioned_Water_9" parent="ALL_water" instance=ExtResource( 13 )]
 position = Vector2( 3472, 976 )
 scale = Vector2( 0.5, 1 )
 
-[node name="Posioned_Water_6" parent="." instance=ExtResource( 13 )]
+[node name="Posioned_Water_6" parent="ALL_water" instance=ExtResource( 13 )]
 position = Vector2( 2960, 968 )
 scale = Vector2( 0.5, 1.5 )
 
-[node name="Posioned_Water_16" parent="." instance=ExtResource( 13 )]
+[node name="Posioned_Water_16" parent="ALL_water" instance=ExtResource( 13 )]
 position = Vector2( 2864, 960 )
 
-[node name="Posioned_Water_17" parent="." instance=ExtResource( 13 )]
+[node name="Posioned_Water_17" parent="ALL_water" instance=ExtResource( 13 )]
 position = Vector2( 2832, 960 )
 
-[node name="Posioned_Water_18" parent="." instance=ExtResource( 13 )]
+[node name="Posioned_Water_18" parent="ALL_water" instance=ExtResource( 13 )]
 position = Vector2( 2800, 960 )
 
-[node name="Posioned_Water_19" parent="." instance=ExtResource( 13 )]
+[node name="Posioned_Water_19" parent="ALL_water" instance=ExtResource( 13 )]
 position = Vector2( 2768, 960 )
 
-[node name="Posioned_Water_33" parent="." instance=ExtResource( 13 )]
+[node name="Posioned_Water_33" parent="ALL_water" instance=ExtResource( 13 )]
 position = Vector2( 2512, 992 )
 
-[node name="Posioned_Water_34" parent="." instance=ExtResource( 13 )]
+[node name="Posioned_Water_34" parent="ALL_water" instance=ExtResource( 13 )]
 position = Vector2( 2480, 992 )
 
-[node name="Posioned_Water_35" parent="." instance=ExtResource( 13 )]
+[node name="Posioned_Water_35" parent="ALL_water" instance=ExtResource( 13 )]
 position = Vector2( 2448, 992 )
 
-[node name="Posioned_Water_36" parent="." instance=ExtResource( 13 )]
+[node name="Posioned_Water_36" parent="ALL_water" instance=ExtResource( 13 )]
 position = Vector2( 2416, 992 )
 
-[node name="Posioned_Water_37" parent="." instance=ExtResource( 13 )]
+[node name="Posioned_Water_37" parent="ALL_water" instance=ExtResource( 13 )]
 position = Vector2( 2384, 992 )
 
-[node name="Block" parent="." instance=ExtResource( 14 )]
-position = Vector2( 3192, 952 )
+[node name="Posioned_Water_26" parent="ALL_water" instance=ExtResource( 13 )]
+position = Vector2( 4144, 984 )
+scale = Vector2( 0.5, 1 )
 
-[node name="Block2" parent="." instance=ExtResource( 14 )]
-position = Vector2( 3472, 975 )
-scale = Vector2( 1, 1.2 )
+[node name="ALL_spikes" type="Node2D" parent="."]
 
-[node name="Block4" parent="." instance=ExtResource( 14 )]
-position = Vector2( 1552, 536 )
-
-[node name="Block5" parent="." instance=ExtResource( 14 )]
-position = Vector2( 4096, 784 )
-scale = Vector2( 1, 1.5 )
-
-[node name="Block3" parent="." instance=ExtResource( 14 )]
-position = Vector2( 3376, 759 )
-scale = Vector2( 1, 1.2 )
-
-[node name="Spike14" parent="." instance=ExtResource( 12 )]
-position = Vector2( 560, 944 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Spike15" parent="." instance=ExtResource( 12 )]
-position = Vector2( 1552, 951 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Spike36" parent="." instance=ExtResource( 12 )]
-position = Vector2( 1264, 954 )
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Spike35" parent="." instance=ExtResource( 12 )]
-position = Vector2( 528, 848 )
-rotation = -3.13377
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Spike16" parent="." instance=ExtResource( 12 )]
-position = Vector2( 3472, 880 )
-rotation = 3.13764
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Spike17" parent="." instance=ExtResource( 12 )]
-position = Vector2( 3088, 344 )
-rotation = 6.28872
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Spike21" parent="." instance=ExtResource( 12 )]
+[node name="Spike21" parent="ALL_spikes" instance=ExtResource( 12 )]
 position = Vector2( 2896, 344 )
-rotation = 6.28872
+rotation = 0.00553339
 scale = Vector2( 0.5, 0.5 )
 
-[node name="Spike29" parent="." instance=ExtResource( 12 )]
-position = Vector2( 2672, 344 )
-rotation = 6.28872
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Spike31" parent="." instance=ExtResource( 12 )]
-position = Vector2( 2512, 344 )
-rotation = 6.28872
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Spike32" parent="." instance=ExtResource( 12 )]
-position = Vector2( 2608, 88 )
-rotation = 6.28872
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Spike34" parent="." instance=ExtResource( 12 )]
-position = Vector2( 2224, 120 )
-rotation = 6.28872
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Spike30" parent="." instance=ExtResource( 12 )]
-position = Vector2( 2704, 344 )
-rotation = 6.28872
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Spike18" parent="." instance=ExtResource( 12 )]
-position = Vector2( 3248, 344 )
-rotation = 6.28872
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Spike19" parent="." instance=ExtResource( 12 )]
-position = Vector2( 3280, 344 )
-rotation = 6.28872
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Spike20" parent="." instance=ExtResource( 12 )]
-position = Vector2( 3312, 344 )
-rotation = 6.28872
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Spike33" parent="." instance=ExtResource( 12 )]
-position = Vector2( 3408, 344 )
-rotation = 6.28872
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Spike37" parent="." instance=ExtResource( 12 )]
-position = Vector2( 3536, 344 )
-rotation = 6.28872
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Spike38" parent="." instance=ExtResource( 12 )]
-position = Vector2( 3632, 344 )
-rotation = 6.28872
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Spike39" parent="." instance=ExtResource( 12 )]
-position = Vector2( 3664, 344 )
-rotation = 6.28872
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Spike40" parent="." instance=ExtResource( 12 )]
-position = Vector2( 3696, 344 )
-rotation = 6.28872
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Spike22" parent="." instance=ExtResource( 12 )]
-position = Vector2( 272, 592 )
-rotation = 1.56672
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Spike28" parent="." instance=ExtResource( 12 )]
-position = Vector2( 336, 208 )
-rotation = 1.56672
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Spike26" parent="." instance=ExtResource( 12 )]
-position = Vector2( 656, 528 )
-rotation = 3.14797
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Spike41" parent="." instance=ExtResource( 12 )]
-position = Vector2( 1200, 816 )
-rotation = 3.14797
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Spike42" parent="." instance=ExtResource( 12 )]
-position = Vector2( 1232, 816 )
-rotation = 3.14797
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Spike43" parent="." instance=ExtResource( 12 )]
-position = Vector2( 1424, 880 )
-rotation = 3.14797
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Spike27" parent="." instance=ExtResource( 12 )]
-position = Vector2( 304, 240 )
-rotation = 3.14797
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Spike23" parent="." instance=ExtResource( 12 )]
-position = Vector2( 112, 792 )
-rotation = 0.00932181
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Spike24" parent="." instance=ExtResource( 12 )]
-position = Vector2( 176, 624 )
-rotation = -3.12491
-scale = Vector2( 0.5, 0.5 )
-
-[node name="Spike25" parent="." instance=ExtResource( 12 )]
+[node name="Spike25" parent="ALL_spikes" instance=ExtResource( 12 )]
 position = Vector2( 208, 624 )
 rotation = -3.12491
 scale = Vector2( 0.5, 0.5 )
 
-[connection signal="collect_jewel" from="Jewel" to="HUD" method="_on_Jewel_collect_jewel"]
-[connection signal="collect_sword" from="Sword" to="HUD" method="_on_Sword_collect_sword"]
-[connection signal="collect_pendant" from="Pendant" to="HUD" method="_on_Pendant_collect_pendant"]
+[node name="Spike24" parent="ALL_spikes" instance=ExtResource( 12 )]
+position = Vector2( 176, 624 )
+rotation = -3.12491
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Spike23" parent="ALL_spikes" instance=ExtResource( 12 )]
+position = Vector2( 112, 792 )
+rotation = 0.00932181
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Spike27" parent="ALL_spikes" instance=ExtResource( 12 )]
+position = Vector2( 304, 240 )
+rotation = -3.13521
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Spike43" parent="ALL_spikes" instance=ExtResource( 12 )]
+position = Vector2( 1424, 880 )
+rotation = -3.13521
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Spike42" parent="ALL_spikes" instance=ExtResource( 12 )]
+position = Vector2( 1232, 816 )
+rotation = -3.13521
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Spike41" parent="ALL_spikes" instance=ExtResource( 12 )]
+position = Vector2( 1200, 816 )
+rotation = -3.13521
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Spike26" parent="ALL_spikes" instance=ExtResource( 12 )]
+position = Vector2( 656, 528 )
+rotation = -3.13521
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Spike28" parent="ALL_spikes" instance=ExtResource( 12 )]
+position = Vector2( 336, 208 )
+rotation = 1.56672
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Spike22" parent="ALL_spikes" instance=ExtResource( 12 )]
+position = Vector2( 272, 592 )
+rotation = 1.56672
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Spike40" parent="ALL_spikes" instance=ExtResource( 12 )]
+position = Vector2( 3696, 344 )
+rotation = 0.00553339
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Spike39" parent="ALL_spikes" instance=ExtResource( 12 )]
+position = Vector2( 3664, 344 )
+rotation = 0.00553339
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Spike38" parent="ALL_spikes" instance=ExtResource( 12 )]
+position = Vector2( 3632, 344 )
+rotation = 0.00553339
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Spike37" parent="ALL_spikes" instance=ExtResource( 12 )]
+position = Vector2( 3536, 344 )
+rotation = 0.00553339
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Spike33" parent="ALL_spikes" instance=ExtResource( 12 )]
+position = Vector2( 3408, 344 )
+rotation = 0.00553339
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Spike20" parent="ALL_spikes" instance=ExtResource( 12 )]
+position = Vector2( 3312, 344 )
+rotation = 0.00553339
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Spike19" parent="ALL_spikes" instance=ExtResource( 12 )]
+position = Vector2( 3280, 344 )
+rotation = 0.00553339
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Spike18" parent="ALL_spikes" instance=ExtResource( 12 )]
+position = Vector2( 3248, 344 )
+rotation = 0.00553339
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Spike30" parent="ALL_spikes" instance=ExtResource( 12 )]
+position = Vector2( 2704, 344 )
+rotation = 0.00553339
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Spike34" parent="ALL_spikes" instance=ExtResource( 12 )]
+position = Vector2( 2224, 120 )
+rotation = 0.00553339
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Spike32" parent="ALL_spikes" instance=ExtResource( 12 )]
+position = Vector2( 2608, 88 )
+rotation = 0.00553339
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Spike31" parent="ALL_spikes" instance=ExtResource( 12 )]
+position = Vector2( 2512, 344 )
+rotation = 0.00553339
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Spike29" parent="ALL_spikes" instance=ExtResource( 12 )]
+position = Vector2( 2672, 344 )
+rotation = 0.00553339
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Spike17" parent="ALL_spikes" instance=ExtResource( 12 )]
+position = Vector2( 3088, 344 )
+rotation = 0.00553339
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Spike16" parent="ALL_spikes" instance=ExtResource( 12 )]
+position = Vector2( 3472, 880 )
+rotation = 3.13764
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Spike35" parent="ALL_spikes" instance=ExtResource( 12 )]
+position = Vector2( 528, 848 )
+rotation = -3.13377
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Spike36" parent="ALL_spikes" instance=ExtResource( 12 )]
+position = Vector2( 1264, 954 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Spike15" parent="ALL_spikes" instance=ExtResource( 12 )]
+position = Vector2( 1552, 951 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Spike14" parent="ALL_spikes" instance=ExtResource( 12 )]
+position = Vector2( 560, 944 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="All_Boxes" type="Node2D" parent="."]
+
+[node name="Block" parent="All_Boxes" instance=ExtResource( 14 )]
+position = Vector2( 3192, 952 )
+
+[node name="Block2" parent="All_Boxes" instance=ExtResource( 14 )]
+position = Vector2( 3472, 975 )
+scale = Vector2( 1, 1.2 )
+
+[node name="Block3" parent="All_Boxes" instance=ExtResource( 14 )]
+position = Vector2( 3376, 759 )
+scale = Vector2( 1, 1.2 )
+
+[node name="Block4" parent="All_Boxes" instance=ExtResource( 14 )]
+position = Vector2( 1552, 536 )
+
+[node name="Block5" parent="All_Boxes" instance=ExtResource( 14 )]
+position = Vector2( 4096, 784 )
+scale = Vector2( 1, 1.5 )
+
+[node name="Items" type="Node2D" parent="."]
+
+[node name="Jewel" parent="Items" instance=ExtResource( 9 )]
+position = Vector2( 112, 120 )
+
+[node name="Sword" parent="Items" instance=ExtResource( 10 )]
+position = Vector2( 2728, 48 )
+
+[node name="Pendant" parent="Items" instance=ExtResource( 11 )]
+position = Vector2( 3504, 936 )
+
+[connection signal="collect_jewel" from="Items/Jewel" to="HUD" method="_on_Jewel_collect_jewel"]
+[connection signal="collect_sword" from="Items/Sword" to="HUD" method="_on_Sword_collect_sword"]
+[connection signal="collect_pendant" from="Items/Pendant" to="HUD" method="_on_Pendant_collect_pendant"]
