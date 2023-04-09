@@ -48,21 +48,12 @@ custom_fonts/font = SubResource( 1 )
 text = "W OR SPACE BAR TO JUMP"
 
 [node name="Label3" type="Label" parent="."]
-<<<<<<< HEAD
-margin_left = 364.0
-margin_top = -1.0
-margin_right = 571.0
-margin_bottom = 13.0
-custom_fonts/font = SubResource( 1 )
-text = "Enter Doors to Move to the Next Level"
-=======
 margin_left = 404.0
 margin_top = -6.0
 margin_right = 595.0
 margin_bottom = 8.0
 custom_fonts/font = SubResource( 1 )
 text = "ENTER DOORS TO THE NEXT LEVEL"
->>>>>>> 6ce8f32144d3f89895308c403bb2a32eb36c0265
 
 [node name="Label" type="Label" parent="."]
 margin_left = -22.0
