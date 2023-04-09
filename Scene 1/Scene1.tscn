@@ -21,7 +21,7 @@ extents = Vector2( 3182.75, 609.844 )
 [node name="World1" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 39, 926 )
+position = Vector2( 36, 856 )
 
 [node name="Background Music" parent="Player" instance=ExtResource( 5 )]
 
