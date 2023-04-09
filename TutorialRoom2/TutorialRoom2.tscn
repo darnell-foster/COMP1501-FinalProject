@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://TileMaps/GrassBlock.tres" type="TileSet" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -9,9 +9,11 @@
 [ext_resource path="res://TutorialRoom2/TutorialRoom2.gd" type="Script" id=7]
 [ext_resource path="res://BackGround/BackGround_Forest.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Art res/Fonts_and_Text/m5x7.ttf" type="DynamicFontData" id=9]
+[ext_resource path="res://Music/Background_Music.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Menu/Menu.tscn" type="PackedScene" id=11]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 779.5, 118.25 )
+extents = Vector2( 1041.5, 212.25 )
 
 [sub_resource type="DynamicFont" id=2]
 font_data = ExtResource( 9 )
@@ -22,6 +24,8 @@ script = ExtResource( 7 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 62, 18 )
+
+[node name="Background Music" parent="Player" instance=ExtResource( 10 )]
 
 [node name="Grass" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
@@ -54,7 +58,7 @@ position = Vector2( 768, 424 )
 [node name="OutOfWorld" parent="." instance=ExtResource( 5 )]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="OutOfWorld"]
-position = Vector2( 479.5, 693.75 )
+position = Vector2( 549.5, 787.75 )
 shape = SubResource( 1 )
 
 [node name="ParallaxBackground" parent="." instance=ExtResource( 8 )]
@@ -68,5 +72,7 @@ custom_fonts/font = SubResource( 2 )
 text = "AVOID THE SPIKES!"
 align = 1
 valign = 1
+
+[node name="Menu" parent="." instance=ExtResource( 11 )]
 
 [connection signal="body_entered" from="Door" to="." method="_on_Door_body_entered"]
