@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Ground.tscn" type="PackedScene" id=2]
@@ -6,6 +6,11 @@
 [ext_resource path="res://BackGround/BackGround_Forest.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Music/Background_Music.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Menu/Menu.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Objects/Door.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Player/Hud.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Objects/Jewel.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Objects/Sword.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Objects/Pendant.tscn" type="PackedScene" id=11]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 515.813, 1276.69 )
@@ -28,17 +33,35 @@ tile_data = PoolIntArray( 65535, 0, 0, 86, 1, 0, 87, 1, 0, 156, 0, 0, 131071, 0,
 [node name="OutOfWorld" parent="." instance=ExtResource( 3 )]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="OutOfWorld"]
-position = Vector2( -575, 832 )
+position = Vector2( -599, 860 )
 shape = SubResource( 1 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="OutOfWorld"]
-position = Vector2( 5578, 960 )
+position = Vector2( 5570, 948 )
 shape = SubResource( 1 )
 
 [node name="OutOfWorld2" parent="." instance=ExtResource( 3 )]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="OutOfWorld2"]
-position = Vector2( 2685.25, 1690.16 )
+position = Vector2( 2685, 1690 )
 shape = SubResource( 2 )
 
+[node name="Door" parent="." instance=ExtResource( 7 )]
+position = Vector2( 4969, 920 )
+
+[node name="HUD" parent="." instance=ExtResource( 8 )]
+
+[node name="Jewel" parent="." instance=ExtResource( 9 )]
+position = Vector2( 974, 947 )
+
+[node name="Sword" parent="." instance=ExtResource( 10 )]
+position = Vector2( 2721, 40.0001 )
+
+[node name="Pendant" parent="." instance=ExtResource( 11 )]
+position = Vector2( 4388, 463 )
+
 [node name="Menu" parent="." instance=ExtResource( 6 )]
+
+[connection signal="collect_jewel" from="Jewel" to="HUD" method="_on_Jewel_collect_jewel"]
+[connection signal="collect_sword" from="Sword" to="HUD" method="_on_Sword_collect_sword"]
+[connection signal="collect_pendant" from="Pendant" to="HUD" method="_on_Pendant_collect_pendant"]
