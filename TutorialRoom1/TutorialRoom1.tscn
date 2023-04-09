@@ -22,8 +22,6 @@ script = ExtResource( 6 )
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 49, 166 )
 collision_mask = 0
-jump_time_to_peak = 0.25
-jump_time_to_decent = 0.2
 
 [node name="Grass" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
@@ -50,12 +48,12 @@ custom_fonts/font = SubResource( 1 )
 text = "Use W or Space Bar to Jump"
 
 [node name="Label3" type="Label" parent="."]
-margin_left = 412.0
-margin_top = 3.0
-margin_right = 603.0
-margin_bottom = 17.0
+margin_left = 364.0
+margin_top = -1.0
+margin_right = 571.0
+margin_bottom = 13.0
 custom_fonts/font = SubResource( 1 )
-text = "Enter Doors to the next Level"
+text = "Enter Doors to Move to the Next Level"
 
 [node name="Label" type="Label" parent="."]
 margin_left = -35.0

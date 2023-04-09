@@ -31,7 +31,7 @@ func _process(delta):
 	#position.y = clamp(position.y, 0, screen_size.y)
 	
 	velocity=move_and_slide(velocity, Vector2.UP)
-	
+		
 func get_gravity()->float:
 	return jump_gravity if velocity.y <0.0 else fall_gravity
 	

@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://TileMaps/Dirt_and_Grass.tres" type="TileSet" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -12,9 +12,11 @@
 [ext_resource path="res://BackGround/BackGround_Forest.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Objects/Jewel.tscn" type="PackedScene" id=11]
 [ext_resource path="res://TileMaps/Posioned_Water_1.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Menu/Menu.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Music/Background_Music.tscn" type="PackedScene" id=14]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 641, 211 )
+extents = Vector2( 1417.5, 211 )
 
 [node name="World" type="Node2D"]
 
@@ -32,6 +34,9 @@ position = Vector2( 464, 152 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 83, 96 )
+
+[node name="Node2D" parent="Player" instance=ExtResource( 14 )]
+position = Vector2( -83, -96 )
 
 [node name="Block" parent="." instance=ExtResource( 5 )]
 position = Vector2( 214, -27 )
@@ -51,7 +56,7 @@ tile_data = PoolIntArray( 262144, 1, 0, 262145, 1, 0, 262146, 1, 0, 262147, 1, 0
 [node name="OutOfWorld" parent="." instance=ExtResource( 3 )]
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="OutOfWorld"]
-position = Vector2( 525, 529 )
+position = Vector2( 603.5, 529 )
 shape = SubResource( 1 )
 
 [node name="ParallaxBackground" parent="." instance=ExtResource( 10 )]
@@ -67,6 +72,8 @@ position = Vector2( 216, 113 )
 [node name="Jewel" parent="." instance=ExtResource( 11 )]
 position = Vector2( 166, 119 )
 rotation = 0.0282178
+
+[node name="Menu" parent="." instance=ExtResource( 13 )]
 
 [connection signal="collect_sword" from="Sword" to="HUD" method="_on_Sword_collect_sword"]
 [connection signal="collect_pendant" from="Pendant" to="HUD" method="_on_Pendant_collect_pendant"]

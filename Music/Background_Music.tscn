@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Music/tek_-_bizzaredistorsion_2023-04-06_22_44.mp3" type="AudioStream" id=1]
+
+[node name="Background Music" type="AudioStreamPlayer2D"]
+stream = ExtResource( 1 )
+autoplay = true

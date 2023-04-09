@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/tek_-_bizzaredistorsion_2023-04-06_22_44.mp3-bf38b9b8fc72420a102d71c44987bd52.mp3str"
+
+[deps]
+
+source_file="res://Music/tek_-_bizzaredistorsion_2023-04-06_22_44.mp3"
+dest_files=[ "res://.import/tek_-_bizzaredistorsion_2023-04-06_22_44.mp3-bf38b9b8fc72420a102d71c44987bd52.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
