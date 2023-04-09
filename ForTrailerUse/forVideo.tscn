@@ -69,3 +69,4 @@ position = Vector2( 1515, 219 )
 rotation = 0.0282178
 
 [node name="HUD" parent="." instance=ExtResource( 12 )]
+visible = false
