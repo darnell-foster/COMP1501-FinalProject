@@ -23,7 +23,7 @@ position = Vector2( 0, 8 )
 script = ExtResource( 11 )
 
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 57, 199 )
+position = Vector2( 41, 26 )
 
 [node name="Background Music" parent="Player" instance=ExtResource( 10 )]
 
