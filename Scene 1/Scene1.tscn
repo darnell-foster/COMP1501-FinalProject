@@ -41,7 +41,7 @@ texture = ExtResource( 4 )
 offset = Vector2( -2112, 644 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 32, 928 )
+position = Vector2( 33, 857 )
 
 [node name="Background Music" parent="Player" instance=ExtResource( 5 )]
 
