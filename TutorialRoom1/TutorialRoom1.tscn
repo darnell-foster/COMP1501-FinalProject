@@ -45,10 +45,10 @@ tile_data = PoolIntArray( -65518, 0, 0, 18, 0, 0, 65554, 0, 0, 131090, 0, 0, 196
 position = Vector2( 552, 52 )
 
 [node name="Label2" type="Label" parent="."]
-margin_left = 182.0
-margin_top = 98.0
-margin_right = 325.0
-margin_bottom = 112.0
+margin_left = 231.0
+margin_top = 82.0
+margin_right = 374.0
+margin_bottom = 96.0
 custom_fonts/font = SubResource( 1 )
 text = "W OR SPACE BAR TO JUMP"
 
@@ -60,10 +60,10 @@ custom_fonts/font = SubResource( 1 )
 text = "ENTER DOORS TO MOVE TO THE NEXT LEVEL"
 
 [node name="Label" type="Label" parent="."]
-margin_left = -22.0
-margin_top = 135.0
-margin_right = 114.0
-margin_bottom = 149.0
+margin_left = 93.0
+margin_top = 142.0
+margin_right = 229.0
+margin_bottom = 156.0
 custom_fonts/font = SubResource( 1 )
 text = "USE A AND D TO MOVE"
 align = 1
