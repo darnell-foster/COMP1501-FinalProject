@@ -2,7 +2,6 @@ extends CanvasLayer
 
 var collected = []
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	if  collected.has("sword"):
@@ -19,13 +18,6 @@ func _ready():
 		$Container/HBoxContainer/ItemFrame3/Jewel.visible = true
 	else:
 		$Container/HBoxContainer/ItemFrame3/Jewel.visible = false
-
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
 
 
 

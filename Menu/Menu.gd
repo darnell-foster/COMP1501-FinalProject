@@ -19,3 +19,7 @@ func _process(delta):
 
 func _on_Quit_pressed():
 	get_tree().quit()
+
+
+func _on_Reset_pressed():
+	get_tree().reload_current_scene()
