@@ -6,7 +6,7 @@
 [ext_resource path="res://TileMaps/DirtBlock.tres" type="TileSet" id=4]
 [ext_resource path="res://Objects/Door.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Objects/OutOfWorld.tscn" type="PackedScene" id=6]
-[ext_resource path="res://BackGround/BackGround_Forest.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Art res/Enviroment/ForestBackground.png" type="Texture" id=7]
 [ext_resource path="res://Art res/Fonts_and_Text/m5x7.ttf" type="DynamicFontData" id=8]
 [ext_resource path="res://Menu/Menu.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Music/Background_Music.tscn" type="PackedScene" id=10]
@@ -19,11 +19,16 @@ extents = Vector2( 863.5, 157.5 )
 font_data = ExtResource( 8 )
 
 [node name="TutorialRoom3" type="Node2D"]
-position = Vector2( 186, -45 )
+position = Vector2( -8, 746 )
 script = ExtResource( 11 )
 
+[node name="BackGround" type="Sprite" parent="."]
+position = Vector2( 1223, 132 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 7 )
+
 [node name="Player" parent="." instance=ExtResource( 3 )]
-position = Vector2( 41, 26 )
+position = Vector2( 57, 130 )
 
 [node name="Background Music" parent="Player" instance=ExtResource( 10 )]
 
@@ -41,7 +46,7 @@ format = 1
 tile_data = PoolIntArray( 262157, 0, 0, 262158, 0, 0, 262159, 0, 0, 262160, 0, 0, 262161, 0, 0, 327693, 0, 0, 327694, 0, 0, 327695, 0, 0, 327696, 0, 0, 393229, 0, 0, 393230, 0, 0, 393231, 0, 0, 393232, 0, 0, 458765, 0, 0, 458766, 0, 0, 458767, 0, 0, 458768, 0, 0, 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 0, 0, 524296, 0, 0, 524297, 0, 0, 524298, 0, 0, 524299, 0, 0, 524300, 0, 0, 524301, 0, 0, 524302, 0, 0, 524303, 0, 0, 524304, 0, 0, 524305, 0, 0, 589824, 0, 0, 589825, 0, 0, 589826, 0, 0, 589827, 0, 0, 589828, 0, 0, 589829, 0, 0, 589830, 0, 0, 589831, 0, 0, 589832, 0, 0, 589833, 0, 0, 589834, 0, 0, 589835, 0, 0, 589836, 0, 0, 589837, 0, 0, 589838, 0, 0, 589839, 0, 0, 589840, 0, 0, 589841, 0, 0 )
 
 [node name="Block2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 275, 54 )
+position = Vector2( 280, 189 )
 
 [node name="OutOfWorld" parent="." instance=ExtResource( 6 )]
 
@@ -52,8 +57,6 @@ shape = SubResource( 1 )
 [node name="Door" parent="." instance=ExtResource( 5 )]
 position = Vector2( 560, 200 )
 scale = Vector2( 0.7, 0.7 )
-
-[node name="ParallaxBackground" parent="." instance=ExtResource( 7 )]
 
 [node name="Label" type="Label" parent="."]
 margin_left = 181.0
