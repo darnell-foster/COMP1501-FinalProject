@@ -7,7 +7,7 @@
 [ext_resource path="res://Objects/OutOfWorld.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Objects/Door.tscn" type="PackedScene" id=6]
 [ext_resource path="res://TutorialRoom2/TutorialRoom2.gd" type="Script" id=7]
-[ext_resource path="res://BackGround/BackGround_Forest.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Art res/Enviroment/ForestBackground.png" type="Texture" id=8]
 [ext_resource path="res://Art res/Fonts_and_Text/m5x7.ttf" type="DynamicFontData" id=9]
 [ext_resource path="res://Music/Background_Music.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Menu/Menu.tscn" type="PackedScene" id=11]
@@ -20,11 +20,16 @@ extents = Vector2( 1041.5, 212.25 )
 font_data = ExtResource( 9 )
 
 [node name="TutorialRoom2" type="Node2D"]
-position = Vector2( 0, 8 )
+position = Vector2( 0, 571 )
 script = ExtResource( 7 )
 
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 1235, 283 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 8 )
+
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 62, 18 )
+position = Vector2( 83, 128 )
 
 [node name="Background Music" parent="Player" instance=ExtResource( 10 )]
 
@@ -61,8 +66,6 @@ position = Vector2( 768, 424 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="OutOfWorld"]
 position = Vector2( 549.5, 787.75 )
 shape = SubResource( 1 )
-
-[node name="ParallaxBackground" parent="." instance=ExtResource( 8 )]
 
 [node name="Label" type="Label" parent="."]
 margin_left = 220.0
