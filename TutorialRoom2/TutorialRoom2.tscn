@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://TileMaps/GrassBlock.tres" type="TileSet" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://Art res/Fonts_and_Text/m5x7.ttf" type="DynamicFontData" id=9]
 [ext_resource path="res://Music/Background_Music.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Menu/Menu.tscn" type="PackedScene" id=11]
+[ext_resource path="res://TileMaps/Posioned_Water_1.tscn" type="PackedScene" id=12]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 1041.5, 212.25 )
@@ -31,7 +32,7 @@ position = Vector2( 62, 18 )
 tile_set = ExtResource( 1 )
 cell_size = Vector2( 32, 32 )
 format = 1
-tile_data = PoolIntArray( 327694, 0, 0, 327695, 0, 0, 327696, 0, 0, 327697, 0, 0, 393216, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 0, 393221, 0, 0, 393222, 0, 0, 393223, 0, 0, 393224, 0, 0, 393225, 0, 0, 393226, 0, 0, 393227, 0, 0, 393228, 0, 0, 393229, 0, 0, 720914, 0, 0, 786462, 0, 0, 786463, 0, 0, 851990, 0, 0, 851993, 0, 0, 851994, 0, 0, 851995, 0, 0, 851996, 0, 0, 851997, 0, 0, 917522, 0, 0, 917523, 0, 0, 917524, 0, 0, 917525, 0, 0, 917526, 0, 0, 917527, 0, 0, 917528, 0, 0 )
+tile_data = PoolIntArray( 327694, 0, 0, 327695, 0, 0, 327696, 0, 0, 327697, 0, 0, 393216, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 0, 393221, 0, 0, 393222, 0, 0, 393223, 0, 0, 393224, 0, 0, 393225, 0, 0, 393228, 0, 0, 393229, 0, 0, 720914, 0, 0, 786462, 0, 0, 786463, 0, 0, 851990, 0, 0, 851993, 0, 0, 851994, 0, 0, 851995, 0, 0, 851996, 0, 0, 851997, 0, 0, 917522, 0, 0, 917523, 0, 0, 917524, 0, 0, 917525, 0, 0, 917526, 0, 0, 917527, 0, 0, 917528, 0, 0 )
 
 [node name="Dirt" type="TileMap" parent="."]
 tile_set = ExtResource( 3 )
@@ -74,5 +75,11 @@ align = 1
 valign = 1
 
 [node name="Menu" parent="." instance=ExtResource( 11 )]
+
+[node name="Posioned_Water_1" parent="." instance=ExtResource( 12 )]
+position = Vector2( 336, 216 )
+
+[node name="Posioned_Water_2" parent="." instance=ExtResource( 12 )]
+position = Vector2( 368, 216 )
 
 [connection signal="body_entered" from="Door" to="." method="_on_Door_body_entered"]
