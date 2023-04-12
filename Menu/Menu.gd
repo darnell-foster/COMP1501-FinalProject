@@ -18,7 +18,7 @@ func _process(delta):
 
 
 func _on_Quit_pressed():
-	get_tree().quit()
+	get_tree().change_scene("res://Title Screen/TitleScreen.tscn")	
 
 
 func _on_Reset_pressed():
