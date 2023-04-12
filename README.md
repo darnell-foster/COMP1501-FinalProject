@@ -7,7 +7,7 @@ This game is a 2D platformer made using the Godot engine by a team of four indiv
 
 ## Installation
 
-To play the game, download the repository and open the "project.godot" in Godot. From there, you can run the game using the Godot engine. The game has not been compiled to run as a standalone executable yet.
+To play the game, download the repository and open the "project.godot" in Godot. From there, you can run the game using the Godot engine, OR play them game on our Itch.io page https://the-four-teenth-floor.itch.io/the-bizzar
 
 ## Gameplay
 
