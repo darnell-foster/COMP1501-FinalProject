@@ -1,6 +1,6 @@
 extends Control
 
-var max_frames = 24
+var max_frames = 32
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
