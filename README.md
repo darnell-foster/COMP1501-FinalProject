@@ -28,3 +28,6 @@ menu: Esc
 ## Credits
 
 This game was created by Carol Zhao, Darnell Foster, Laeticia London, and Peng Shen. We would like to thank their instructors for providing guidance and support throughout the development process.
+
+## Youtube
+https://www.youtube.com/@thefourteenthfloor-1501
